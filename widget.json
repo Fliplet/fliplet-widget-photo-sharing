@@ -14,8 +14,7 @@
       "fliplet-utils",
       "fliplet-studio-ui",
       "handlebars",
-      "bootstrap",
-      "lodash"
+      "bootstrap"
     ],
     "assets": [
       "js/interface.js",
