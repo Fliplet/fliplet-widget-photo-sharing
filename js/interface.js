@@ -208,8 +208,8 @@ function emailValidate(email) {
 function save(notifyComplete) {
   data.reportEmail = $('#report_email').val();
   data.dataSourceId = $dataSource.val();
-  data.folderData = filePickerData && !_.isEmpty(filePickerData) ? filePickerData : data.folder.data;
-  data.folder.folderId = filePickerData && !_.isEmpty(filePickerData) ? filePickerData.selectFiles[0].id : data.folder.folderId;
+  data.folderData = filePickerData && !Fliplet.Utils.isEmpty(filePickerData) ? filePickerData : data.folder.data;
+  data.folder.folderId = filePickerData && !Fliplet.Utils.isEmpty(filePickerData) ? filePickerData.selectFiles[0].id : data.folder.folderId;
 
   Fliplet.Widget.save(data).then(function() {
     if (notifyComplete) {
